@@ -6,12 +6,24 @@ $neutral-color-dark-greyish-red: hsl(0, 6%, 24%);
 $imagesPath:"/images";
 
 body {
-    font: $font;
+    font-family: $font;
     color: $primary-color-desaturated-red;
     background-image: url("/images/bg-pattern-desktop.svg");
-
 }
 
+.Text {
+    text-align: center;
+    
+    #first-line {
+        font-weight: 300;
+    }
+    #second-line {
+        color: black;
+    }
+    p {
+        font-weight: 300;
+    }
+}
 
 // The designs were created to the following widths:
 

@@ -1,7 +1,20 @@
 body {
-  font: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #ce9797;
   background-image: url("/images/bg-pattern-desktop.svg");
+}
+
+.Text {
+  text-align: center;
+}
+.Text #first-line {
+  font-weight: 300;
+}
+.Text #second-line {
+  color: black;
+}
+.Text p {
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
