@@ -1,6 +1,6 @@
 $font: 'Josefin Sans', sans-serif;
 $font-size-body: 16px;
-$primary-color-desaturated-red: hsl(0, 36%, 70%);
+$primary-color-desaturated-red: hsl(0, 36%, 55%);
 $primary-color-soft-red: hsl(0, 93%, 68%);
 $neutral-color-dark-greyish-red: hsl(0, 6%, 24%);
 $imagesPath:"/images";
@@ -8,14 +8,23 @@ $imagesPath:"/images";
 body {
     font-family: $font;
     color: $primary-color-desaturated-red;
-    background-image: url("/images/bg-pattern-desktop.svg");
+    // background-image: url("/images/bg-pattern-desktop.svg");
+
+    header {
+        padding: 3% 0% 5% 3%;
+    }
+
+    h1 {
+        font-size: 250%;
+        letter-spacing: 5px;
+        margin: 0%;
+    }
 }
 
-.Text {
-    text-align: center;
-    
+.Text {  
     #first-line {
         font-weight: 300;
+        padding-top: 20%;
     }
     #second-line {
         color: black;
@@ -23,6 +32,37 @@ body {
     p {
         font-weight: 300;
     }
+}
+
+footer {
+    float: right;
+    padding: 7% 5% 0% 0%;
+    font-size: xx-small;
+}
+
+@media screen 
+and (min-width: 375px)
+and (max-width: 416px) {
+    body {
+        background-color: #faf5f5;
+        background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
+    .Coming-soon {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 250px auto;
+        text-align: center;
+        
+        .Picture {
+            background-image: url("hero-mobile.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .Text {
+            padding: 0% 5% 0% 5%;
+        }
+      }     
 }
 
 // The designs were created to the following widths:

@@ -1,20 +1,52 @@
 body {
   font-family: "Josefin Sans", sans-serif;
-  color: #ce9797;
-  background-image: url("/images/bg-pattern-desktop.svg");
+  color: #b66363;
+}
+body header {
+  padding: 3% 0% 5% 3%;
+}
+body h1 {
+  font-size: 250%;
+  letter-spacing: 5px;
+  margin: 0%;
 }
 
-.Text {
-  text-align: center;
-}
 .Text #first-line {
   font-weight: 300;
+  padding-top: 20%;
 }
 .Text #second-line {
   color: black;
 }
 .Text p {
   font-weight: 300;
+}
+
+footer {
+  float: right;
+  padding: 7% 5% 0% 0%;
+  font-size: xx-small;
+}
+
+@media screen and (min-width: 375px) and (max-width: 416px) {
+  body {
+    background-color: #faf5f5;
+    background-image: linear-gradient(white, #fff5f5);
+  }
+
+  .Coming-soon {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 250px auto;
+    text-align: center;
+  }
+  .Coming-soon .Picture {
+    background-image: url("hero-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+  .Coming-soon .Text {
+    padding: 0% 5% 0% 5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
