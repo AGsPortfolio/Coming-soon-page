@@ -22,6 +22,34 @@ body h1 {
   font-weight: 300;
 }
 
+.Email {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+.Email .Form {
+  border-radius: 20px;
+  border: 0.5px solid rgba(182, 99, 99, 0.3);
+  background-color: #faf5f5;
+}
+.Email #email {
+  margin-left: 15px;
+  border: none;
+  background-color: #faf5f5;
+  width: 230px;
+  height: 15px;
+}
+.Email #submit {
+  color: white;
+  background-image: linear-gradient(to right, #f8bfbf, #ee8c8c);
+  border-radius: 20px;
+  width: 55px;
+  height: 35px;
+  border: none;
+  background-color: #faf5f5;
+  box-shadow: -1px 10px 18px rgba(65, 58, 58, 0.2);
+}
+
 footer {
   float: right;
   padding: 7% 5% 0% 0%;
