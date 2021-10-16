@@ -11,38 +11,44 @@
     <title>Base Apparel coming soon page</title>
   </head>
   <body>
-    <header>
+    <header class="Mobile-header">
       <img src="logo.svg" width="35%" height="35%" alt="logo">
     </header>
 
     <section class="Coming-soon">
-      <div class="Picture">
-      </div>
+      
+      <div class="Picture"></div>
+      
       <div class="Text">
+        <header class="Desktop-header">
+          <img src="logo.svg" width="35%" height="35%" alt="logo">
+        </header>
         <h1 id="first-line">WE'RE</h1>
         <h1 id="second-line">COMING SOON</h1>
         <p>Hello fellow shoppers! We're currently building our new
         fashion store. Add your email below to stay up-to-date with announcements
         and our launch deals.</p>
+
+        <form name="emailValidation" class="Email" action="">
+          <div class="Form">
+            <input type="text" name="emailAddress" id="email" placeholder="Email Address" autofocus>
+            <button id="submit" onclick="EmailValidation(document.emailValidation.emailAddress)">
+              <ion-icon class="icon" name="chevron-forward-outline"></ion-icon></button>
+          </div><br>
+          <div id="message"></div>
+        </form>
+
+        <footer>
+          <p class="attribution">
+          Coded by <a href="https://github.com/AGsPortfolio" target="blank">André Goossens</a>.
+          </p>
+        </footer>
       </div>
-      
-      <form name="emailValidation" class="Email" action="">
-        <div class="Form">
-          <input type="text" name="emailAddress" id="email" placeholder="Email Address">
-          <button id="submit" onclick="EmailValidation(document.emailValidation.emailAddress)">
-            <ion-icon name="chevron-forward-outline"></ion-icon></button>
-        </div>
-      </form>
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 
-  <footer>
-    <p class="attribution">
-    Coded by <a href="https://github.com/AGsPortfolio" target="blank">André Goossens</a>.
-    </p>
-  </footer>
 
 </html>
