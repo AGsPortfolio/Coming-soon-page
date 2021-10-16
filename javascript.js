@@ -11,7 +11,7 @@ function EmailValidation (enteredEmail) {
         document.emailValidation.emailAddress.focus();
         return false;
     }
-}, 100);
+}, 1000);
 }
 
 
