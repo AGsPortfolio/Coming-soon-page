@@ -1,4 +1,5 @@
 function EmailValidation (enteredEmail) {
+    setTimeout(function() {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if(enteredEmail.value.match(mailformat)) {
@@ -10,6 +11,7 @@ function EmailValidation (enteredEmail) {
         document.emailValidation.emailAddress.focus();
         return false;
     }
+}, 100);
 }
 
 
