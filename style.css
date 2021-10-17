@@ -1,6 +1,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #b66363;
+  margin: 0;
 }
 body header {
   padding: 3% 0% 5% 3%;
@@ -9,6 +10,10 @@ body h1 {
   font-size: 250%;
   letter-spacing: 10px;
   margin: 0%;
+}
+body #logo {
+  width: 35%;
+  height: 35%;
 }
 
 .Text #first-line {
@@ -31,29 +36,29 @@ body h1 {
 .Email .Form {
   border-radius: 20px;
   border: 0.5px solid rgba(182, 99, 99, 0.3);
-  background-color: #faf5f5;
 }
 .Email #email {
+  background-color: transparent;
   margin-left: 15px;
   border: none;
-  width: 230px;
-  height: 15px;
-  background-color: #faf5f5;
+  width: 150px;
+  height: 30px;
 }
 .Email #submit {
   color: white;
   background-image: linear-gradient(to right, #f8bfbf, #ee8c8c);
   border-radius: 20px;
-  width: 55px;
+  width: 60px;
   height: 35px;
   border: none;
   box-shadow: -1px 10px 18px rgba(65, 58, 58, 0.2);
-  background-color: #faf5f5;
+  padding-left: 0px;
+  cursor: pointer;
 }
 .Email #message {
-  padding: 3% 0% 0% 5%;
-  font-size: 12px;
-  text-align: left;
+  padding-top: 5%;
+  font-size: 14px;
+  text-align: center;
 }
 .Email .Form:hover {
   border: 1px solid #f96262;
@@ -76,7 +81,7 @@ footer {
   font-size: xx-small;
 }
 
-@media screen and (min-width: 320px) and (max-width: 599px) {
+@media screen and (min-width: 300px) and (max-width: 599px) {
   body {
     background-color: #faf5f5;
     background-image: linear-gradient(white, #fff5f5);
@@ -101,7 +106,7 @@ footer {
     padding: 0% 5% 0% 5%;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1115px) {
   body {
     background-image: url("bg-pattern-desktop.png");
     background-repeat: no-repeat;
@@ -154,10 +159,10 @@ footer {
 
   footer {
     float: left;
-    padding: 20% 0% 0% 0%;
+    padding-top: 20%;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1115px) {
   body {
     background-image: url("bg-pattern-desktop.png");
     background-repeat: no-repeat;
@@ -212,7 +217,7 @@ footer {
 
   footer {
     float: left;
-    padding: 20% 0% 0% 0%;
+    padding-top: 20%;
   }
 }
 

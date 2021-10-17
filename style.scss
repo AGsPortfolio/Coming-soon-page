@@ -3,11 +3,14 @@ $font-size-body: 16px;
 $primary-color-desaturated-red: hsl(0, 36%, 55%);
 $primary-color-soft-red: hsl(0, 93%, 68%);
 $neutral-color-dark-greyish-red: hsl(0, 6%, 24%);
-$imagesPath:"/images";
+$gradient: linear-gradient( hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+$gradient-to-right: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$background-gradient: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 
 body {
     font-family: $font;
     color: $primary-color-desaturated-red;
+    margin: 0;
 
     header {
         padding: 3% 0% 5% 3%;
@@ -17,6 +20,11 @@ body {
         font-size: 250%;
         letter-spacing: 10px;
         margin: 0%;
+    }
+
+    #logo {
+        width:35%; 
+        height:35%;
     }
 }
 
@@ -41,34 +49,33 @@ body {
     
     .Form {
         border-radius: 20px;
-        border: 0.5px solid rgb(182, 99, 99, .3);
-        background-color:#faf5f5;
-
+        border: 0.5px solid rgb(182, 99, 99, .3);       
     }
     
     #email {
+        background-color: transparent;
         margin-left: 15px;
         border: none;
-        width: 230px;
-        height: 15px;
-        background-color:#faf5f5;
+        width: 150px;
+        height: 30px;
     } 
     
     #submit {
         color: white;
-        background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        background-image: $gradient-to-right;
         border-radius: 20px;
-        width: 55px;
+        width: 60px;
         height: 35px;
         border: none;
         box-shadow: -1px 10px 18px hsl(0, 6%, 24%, 0.2);
-        background-color:#faf5f5;
+        padding-left: 0px;
+        cursor: pointer;
     }
     
     #message {
-        padding: 3% 0% 0% 5%;
-        font-size: 12px;
-        text-align: left;
+        padding-top: 5%;
+        font-size: 14px;
+        text-align: center;
     }
     
     .Form:hover {
@@ -76,7 +83,7 @@ body {
     }
     
     #submit:hover {
-        background-image: linear-gradient( hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        background-image: $gradient;
     }
 }
 ::placeholder {
@@ -94,11 +101,11 @@ footer {
 }
 
 @media screen 
-and (min-width: 320px)
+and (min-width: 300px)
 and (max-width: 599px) {
     body {
         background-color: #faf5f5;
-        background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background-image: $background-gradient;
     }
 
     .Desktop-header {
@@ -125,7 +132,7 @@ and (max-width: 599px) {
 
 @media screen 
 and (min-width: 600px)
-and (max-width: 1024px) {
+and (max-width: 1115px) {
     body {
         background-image: url("bg-pattern-desktop.png");
         background-repeat: no-repeat;
@@ -183,12 +190,12 @@ and (max-width: 1024px) {
 
     footer {
         float: left;
-        padding:20% 0% 0% 0%;
+        padding-top:20%;
     }
 }
 
 @media screen 
-and (min-width: 1025px) {
+and (min-width: 1115px) {
     body {
         background-image: url("bg-pattern-desktop.png");
         background-repeat: no-repeat;
@@ -248,6 +255,6 @@ and (min-width: 1025px) {
 
     footer {
         float: left;
-        padding:20% 0% 0% 0%;
+        padding-top:20%;
     }
 }
